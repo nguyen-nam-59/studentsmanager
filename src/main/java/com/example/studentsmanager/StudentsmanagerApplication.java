@@ -8,6 +8,7 @@ public class StudentsmanagerApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(StudentsmanagerApplication.class, args);
+        //test second commit
     }
 
 }
