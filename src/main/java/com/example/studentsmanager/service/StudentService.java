@@ -18,6 +18,8 @@ public class StudentService {
     }
     public Student saveStudent(Student student){
         return repository.save(student);
+
+//        test command
     }
     public void deleteStudent(Long id){
         repository.deleteById(id);
