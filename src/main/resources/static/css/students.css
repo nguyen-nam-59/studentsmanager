@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f6f9;
+    margin:0;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#3498db;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+.actions a{
+    text-decoration:none;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.edit{
+    color:#27ae60;
+}
+
+.delete{
+    color:#e74c3c;
+}
+.add-btn-box{
+    margin-bottom:20px;
+}
+
+.add-btn{
+    background:#2ecc71;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:bold;
+}
+
+.add-btn:hover{
+    background:#27ae60;
+}

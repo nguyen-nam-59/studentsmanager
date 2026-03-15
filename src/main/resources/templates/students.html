@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student List</title>
+
+    <link rel="stylesheet" th:href="@{/css/students.css}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Student List</h1>
+
+    <!-- ADD BUTTON -->
+    <div class="add-btn-box">
+        <a class="add-btn" th:href="@{/students/add}">
+            Add Student
+        </a>
+    </div>
+
+    <table>
+
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        <tr th:each="student : ${students}">
+            <td th:text="${student.id}"></td>
+            <td th:text="${student.name}"></td>
+            <td th:text="${student.email}"></td>
+
+            <td class="actions">
+
+                <a class="edit"
+                   th:href="@{/students/edit/{id}(id=${student.id})}">
+                    Edit
+                </a>
+
+                <a class="delete"
+                   th:href="@{/students/delete/{id}(id=${student.id})}"
+                   onclick="return confirm('Delete this student?')">
+                    Delete
+                </a>
+
+            </td>
+
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</body>
+</html>

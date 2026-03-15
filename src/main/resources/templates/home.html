@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" th:href="@{/css/home.css}">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Student Management System</h1>
+
+    <nav>
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/students}">Students</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h2>Welcome to Student Manager</h2>
+
+    <p>
+        This system helps you manage student information easily.
+        You can add, delete, edit and view student records.
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn" th:href="@{/students}">
+            View Students
+        </a>
+
+        <a class="btn add" th:href="@{/students/add}">
+            Add Student
+        </a>
+
+    </div>
+
+</section>
+
+
+<section class="features">
+
+    <div class="card">
+        <h3>Add Students</h3>
+        <p>Easily add new students into the system.</p>
+    </div>
+
+    <div class="card">
+        <h3>Manage Data</h3>
+        <p>Edit or delete student information anytime.</p>
+    </div>
+
+    <div class="card">
+        <h3>Fast & Simple</h3>
+        <p>Simple interface for quick student management.</p>
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>© 2025 Student Management System</p>
+
+</footer>
+
+</body>
+</html>
